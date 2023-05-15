@@ -14,6 +14,8 @@ Figure 1. Landing pages for the control group and the treatment group.
 
 The dataset generated during the test period contains three tables shown in the ERD in Figure 2. 
 
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/ERD.jpeg" alt="Entitity Relationship Diagram for the A/B test"> 
+
 Figure 2. Entity Relationship Diagram generated from the data collected during the A/B test.
 
 The three tables were joined using SQL (see the code below) with an inner join between the users and groups tables and a left join between the users and activity tables in order to include all the users' IDs, even those without purchase events. 
