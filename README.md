@@ -8,6 +8,8 @@ I have determined the effectiveness of the new banner to increase sales using an
 
 The GloBox’s growth team ran an A/B test with a new banner (Figure 1) aiming to promote its new category of food and drinks and increase its revenue. The control group did not perceive a difference in the app and the treatment group was exposed to the banner. These sample groups have a similar size (Control: 24343 users, treatment: 24600 users) and are stratified random samples (stratas: gender, country and mobile device). The test lasted 12 days in the first quartile of 2023 which is a reasonable period to observe any change in sales for our E-commerce company.
 
+ <img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/A-B%20test%20groups.png" alt="A/B test groups"> 
+
 Figure 1. Landing pages for the control group and the treatment group.
 
 The dataset generated during the test period contains three tables shown in the ERD in Figure 2. 
