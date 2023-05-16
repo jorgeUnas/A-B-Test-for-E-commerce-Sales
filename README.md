@@ -33,26 +33,32 @@ The similarities between the bar sizes for the control and treatment groups in e
 
 <img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Loc_users.png" alt="Location of the users in each group"> 
 
+Figure 3.
+
 <img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/gender_device.png" alt="Gender an device of the users in each group"> 
+Figure 4.
 
 Revenue per user
 In order to determine if there was a significant difference in revenue between the two groups, we ran a hypothesis test. We used the revenue per user as the metric and the unique users as the units. 
 Using a z-test we did not find a statistically significant difference between the revenue per user for the two groups at the 5% significance level (p=0.94). The confidence interval (95%) for the difference in revenue per user between the two groups was (-0.471, 0.439). This interval includes 0. Also, note that the 95% confidence intervals for each group have a high overlap with each other (Figure 5). 
 
-
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Conf_intervals_rev.png" alt="Confidence intervals for each group"> 
 
 Figure 5. 95% confidence interval for the revenue per user in the control and treatment groups. 
+
 There are two mean reasons why the revenue per user is not the best approach to run a hypothesis test and can lead to impractical results. First of all, most of the values for revenue are null values (or zeros) corresponding to the users that did not purchase. This displaces the mean (and also the median) to zero. Second, if we ignore these null values and see the revenue distribution, we find a lot of outliers (see Figure 6), which lead to high variances for each group. With high variances, the difference between the groups is more likely to be due to random error. A possible solution to deal with the variance of the revenue is to increase the sample size and do the A/B test again. Although we can increase the sample size until detect a significant difference, this difference could be so small to have practical significance and could be a waste of time. Thus, I do not recommend to lunch the banner on the homepage if the unique goal is to increase the revenue and I also do not recommend redoing the A/B using the same banner and including more user users or extending the test period. 
 
-
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Revenue_barplot.png" alt="Distribution of the revenue: control vs treatment"> 
+Figure 6. 
 
 Conversion Rate
 
 We obtained a better result from the hypothesis testing using the conversion rate instead of the revenue per user. Using a z-test we found a statistically significant difference between the conversion rate for the two groups at the 5% significance level (p= 1.1x 10-4). The confidence interval (95%) for the difference in revenue per user between the two groups was (0.0034, 0.010) (figure 7). This interval does not include 0. Also, note that the 95% confidence intervals for each group do not overlap each other (Figure 8).
 
-
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Diff_distr_CI.png" alt=""> 
 Figure 7.
 
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Conf_intervals.png" alt=""> 
 Figure 8. 
 Finally, we have got a percentual difference of 18% in the conversion rate between the groups. As we do not have a parameter to define the practical significance of our A/B test we can use the Cohen’s d, which is a measure of the difference between the two groups in terms of standard deviation. A Cohen’s d value of 0.8 or higher is generally interpreted as a larger effect or a high practical significance. As our Cohen’s d was 5.467, we can trust that our difference in conversion rates has practical significance and consequently our banner is an effective marketing strategy. 
 
