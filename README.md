@@ -27,9 +27,13 @@ Two KPIs were taken into account to perform the hypothesis testing:
 -	Conversion rate 
 
 As predefined, the significance level was set to 5% and, the distribution of the metrics and their difference (between control and treatment groups) were assumed to be normal. Additionally, as the company has not defined any practical significance for these tests, I adopted the Cohen’s d value to have an idea if the difference between the control and treatment metrics is, in fact, relevant or just originated from the size effect.  
-Results
+
+## Results
 The similarities between the bar sizes for the control and treatment groups in each category or strata confirm that our experiment contains stratified randomized data. From the plots we can also say that most of our users are people from USA and Brazil using Android devices.  
 
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Loc_users.png" alt="Location of the users in each group"> 
+
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/gender_device.png" alt="Gender an device of the users in each group"> 
 
 Revenue per user
 In order to determine if there was a significant difference in revenue between the two groups, we ran a hypothesis test. We used the revenue per user as the metric and the unique users as the units. 
