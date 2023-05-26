@@ -12,9 +12,10 @@ The GloBox’s growth team ran an A/B test with a new banner (Figure 1) aiming t
 
  <img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/A-B%20test%20groups.png" alt="A/B test groups" height="300" > 
  
- <p align="center" > 
 
 Figure 1. Landing pages for the control group and the treatment group.
+
+ </p> 
 
 The dataset generated during the test period contains three tables shown in the ERD in Figure 2. 
 
