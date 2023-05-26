@@ -15,7 +15,7 @@ The GloBox’s growth team ran an A/B test with a new banner (Figure 1) aiming t
   
   
 <p align="center" > 
-<strong>Figure 1.</strong> Landing pages for the control group and the treatment group.
+ <b>Figure 1.</b> Landing pages for the control group and the treatment group.
  </p>
 
 
