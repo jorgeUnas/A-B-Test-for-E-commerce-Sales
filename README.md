@@ -28,8 +28,11 @@ The dataset generated during the test period contains three tables shown in the 
  
  </p>
 
+<p align="center" > 
 Figure 2. Entity Relationship Diagram generated from the data collected during the A/B test.
-
+ </p>
+ 
+ 
 The three tables were joined using SQL (see the code below) with an inner join between the users and groups tables and a left join between the users and activity tables in order to include all the users' IDs, even those without purchase events. 
 
 The fields gender, purch_dt and spent contained null values. Null values for gender were due to users that prefer not to specify their gender in the sign-up form, while purch_dt and spent null entries were generated after the left join for the users’ IDs that did not make a purchase. Consequently, any null values generated can be optionally replaced with zeros for interpretation purposes without impacting the results of the A/B test.
@@ -43,12 +46,22 @@ As predefined, the significance level was set to 5% and, the distribution of the
 ## Results
 The similarities between the bar sizes for the control and treatment groups in each category or strata confirm that our experiment contains stratified randomized data. From the plots we can also say that most of our users are people from USA and Brazil using Android devices.  
 
-<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Loc_users.png" alt="Location of the users in each group"> 
-
+<p align="center" > 
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/Loc_users.png" alt="Location of the users in each group" height="300"> 
+ </p>
+ 
+ <p align="center" > 
 Figure 3.
+ </p>
 
-<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/gender_device.png" alt="Gender an device of the users in each group"> 
+
+<p align="center" > 
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/gender_device.png" alt="Gender an device of the users in each group" height="300"> 
+ </p>
+ 
+ <p align="center"> 
 Figure 4.
+ </p> 
 
 Revenue per user
 In order to determine if there was a significant difference in revenue between the two groups, we ran a hypothesis test. We used the revenue per user as the metric and the unique users as the units. 
