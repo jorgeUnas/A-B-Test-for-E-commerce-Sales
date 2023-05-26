@@ -10,7 +10,7 @@ The GloBox’s growth team ran an A/B test with a new banner (Figure 1) aiming t
 
 <p align="center" > 
 
- <img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/A-B%20test%20groups.png" alt="A/B test groups" height="300" > 
+ <img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/A-B%20test%20groups.png" alt="A/B test groups" height="350" > 
   </p> 
   
   
