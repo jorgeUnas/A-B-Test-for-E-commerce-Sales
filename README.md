@@ -16,7 +16,7 @@ The dataset generated during the test period contains three tables shown in the 
 
 <p align="center" > 
 
-<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/ERD.jpeg" alt="Entitity Relationship Diagram for the A/B test" height="300"> 
+<img src="https://github.com/jorgeUnas/A-B-Test-for-E-commerce-Sales/blob/main/ERD.jpeg" alt="Entitity Relationship Diagram for the A/B test" height="200"> 
  
  </p>
 
