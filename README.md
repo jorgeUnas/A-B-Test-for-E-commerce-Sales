@@ -35,6 +35,22 @@ Figure 2. Entity Relationship Diagram generated from the data collected during t
  
 The three tables were joined using SQL (see the code below) with an inner join between the users and groups tables and a left join between the users and activity tables in order to include all the users' IDs, even those without purchase events. 
 
+"sql
+SELECT u.id,
+       u.country,
+       u.gender,
+       g.group,
+       g.join_dt,
+       a.dt AS purch_dt,
+       a.spent,
+       g.device
+FROM "users" u
+JOIN "groups" g
+    ON u.id = g.uid
+LEFT JOIN "activity" a
+    ON u.id = a.uid
+"
+
 The fields gender, purch_dt and spent contained null values. Null values for gender were due to users that prefer not to specify their gender in the sign-up form, while purch_dt and spent null entries were generated after the left join for the users’ IDs that did not make a purchase. Consequently, any null values generated can be optionally replaced with zeros for interpretation purposes without impacting the results of the A/B test.
 
 Two KPIs were taken into account to perform the hypothesis testing:
